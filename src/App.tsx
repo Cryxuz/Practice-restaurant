@@ -1,10 +1,11 @@
+import Nav from "./Nav"
 
 function App() {
 
 
   return (
     <>
-    <h1>Restaurant</h1>
+    <Nav />
     </>
   )
 }
