@@ -1,9 +1,12 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+
 const CarouselPage = () => {
   return (
+    
     <div className="block md:grid grid-cols-5 gap-[5%] justify-center items-center p-[5%] bg-cover bg-opacity-30" style={{ backgroundImage: 'url("/images/grill.jpg")' }}>
+      
       <div className="col-span-3">
         <Carousel>
           <div>
