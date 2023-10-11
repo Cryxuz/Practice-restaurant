@@ -12,7 +12,7 @@ function App() {
     <div>
     <Intro />
     </div>
-    <div className="h-screen w-screen fixed">
+    <div className="h-screen w-screen">
       <Carousel />   
     </div>
     </>
