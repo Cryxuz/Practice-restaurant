@@ -7,16 +7,16 @@ const navLinks = [
     link: "/"
   },
   {
-    title: "Story",
-    link: "#story"
-  },
-  {
     title: "Menu",
     link: "#menu"
   },
   {
     title: "Booking",
     link: "/booking"
+  },
+  {
+    title: "Story",
+    link: "#story"
   },
   {
     title: "Contact",
