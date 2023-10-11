@@ -1,7 +1,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const CarouselPage = () => {
+const CarouselMenu = () => {
   return (
     <div className="block md:grid grid-cols-5 gap-[5%] justify-center items-center m-[5%]">
       <div className="col-span-3">
@@ -33,4 +33,4 @@ const CarouselPage = () => {
   );
 };
 
-export default CarouselPage
+export default CarouselMenu;

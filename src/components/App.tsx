@@ -1,6 +1,6 @@
 import Nav from "./Nav"
-import Carousel from "./Carousel"
 import Intro from "./Intro"
+import CarouselPage from "./Carousel"
 
 
 function App() {
@@ -11,9 +11,7 @@ function App() {
     <div>
     <Intro />
     </div>
-    <div className="h-screen w-screen">
-      <Carousel />   
-    </div>
+    <CarouselPage />
     </>
   )
 }
