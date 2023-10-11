@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="bg-cover py-[5%] h-screen" style={{ backgroundImage: 'url("/images/table-setting.jpg")' }}>
+    <div className="bg-cover py-[5%] min-h-screen" style={{ backgroundImage: 'url("/images/table-setting.jpg")' }}>
       <div className="w-[90%] md:w-[50%] bg-slate-800 p-[10%] md:p-[3%] pb-[5%] mt-[20%] md:mt-[10%] xl:mt-[5%] mx-auto rounded-xl bg-opacity-80 " >
         <h2 className="text-white text-2xl md:text-3xl ">Contact Us</h2>
         <br />
@@ -32,6 +32,25 @@ function Contact() {
             Submit
           </button>
         </form>
+        <div className="xl:grid xl:grid-cols-3 items-center justify-center">
+        <div className="location text-center">
+          <p className="text-xl my-[5%] text-white">Location</p>
+          <p className="text-gray-300">123 Fake Street, Queenstown, New Zealand</p>
+        </div>
+        <div className="social media text-center">
+          <p className="text-xl my-[5%] text-white">Follow Us</p>
+          <div className="flex items-center justify-center gap-2">
+          <img src="/images/facebook.png" alt="" />
+          <img src="/images/tripadvisor.png" alt="" />
+          <img src="/images/instagram.png" alt="" />
+          </div>
+        </div>
+        <div className="contact text-center">
+          <p className="text-xl my-[5%] text-white">Contact</p>
+          <p className="text-gray-300">Call 01 23 456 789</p>
+          <p className="text-gray-300">FakeEmail@gmail.com</p>
+        </div>
+        </div>
       </div>
     </div>
   );
