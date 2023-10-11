@@ -1,6 +1,6 @@
 import Nav from "./Nav"
 import Intro from "./Intro"
-import CarouselPage from "./Carousel"
+import CarouselPage from "./CarouselPage"
 
 
 function App() {
