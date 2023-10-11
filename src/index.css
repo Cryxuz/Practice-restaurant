@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 * {
+  
   font-family: 'Merriweather', serif;
 }
 
 .cursive {
   font-family: 'Allura', cursive;
 }
+

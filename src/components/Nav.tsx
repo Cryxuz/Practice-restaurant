@@ -41,7 +41,7 @@ function Nav() {
             <div className="ml-10 flex items-center space-x-4">
               {navLinks.map((link, index) => (
                 <a
-                  className="text-gray-300 transition-all duration-500 hover:bg-gray-500 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md font-medium text-2xl"
+                  className="text-gray-300 transition-all duration-500 hover:underline hover:text-white px-3 py-2 rounded-md font-medium text-2xl"
                   key={index}
                   href={link.link}
                 >
