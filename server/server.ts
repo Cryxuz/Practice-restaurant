@@ -1,20 +1,22 @@
-import express from 'express'
-import * as Path from 'node:path'
+import express from 'express';
+import sqlite3 from 'sqlite3';
 
+const app = express();
+const port = process.env.PORT || 3000;
+const db = new sqlite3.Database('database.db');
 
+// Create an initial table if it doesn't exist
+db.serialize(() => {
+  db.run('CREATE TABLE IF NOT EXISTS your_table_name (id INTEGER PRIMARY KEY, name TEXT)');
+});
 
-const server = express()
+app.use(express.json());
 
-server.use(express.json())
+// Define your API endpoints or routes here
 
-server.use('/api/v1/booking', )
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
 
-if (process.env.NODE_ENV === 'production') {
-  server.use(express.static(Path.resolve('public')))
-  server.use('/assets', express.static(Path.resolve('./dist/assets')))
-  server.get('*', (req, res) => {
-    res.sendFile(Path.resolve('./dist/index.html'))
-  })
-}
-
-export default server
+// Export the 'app' object
+export default app;

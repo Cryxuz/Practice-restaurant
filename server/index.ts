@@ -1,8 +1,7 @@
-import server from './server'
+import app from './server'; // Make sure the import path is correct
 
-const PORT = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
-server.listen(PORT, () => {
-  // eslint-disable-next-line no-console
-  console.log('Server listening on port', PORT)
-})
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
